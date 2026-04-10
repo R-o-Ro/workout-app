@@ -1,4 +1,4 @@
-# Workout Tracker App
+# FitTrack
 
 A full-stack fitness tracking application for managing workouts, tracking performance, and analyzing progress over time.
 
