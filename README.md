@@ -1,16 +1,147 @@
-# React + Vite
+# Workout Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack fitness tracking application for managing workouts, tracking performance, and analyzing progress over time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Create and manage workout routines
+* Add and customize exercises
+* Track workout history and performance
+* Visualize progress using charts
+* Record body measurements
+* Set and monitor fitness goals
+* Rest timer and session tracking
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+
+* React (Vite)
+* Tailwind CSS
+* Context API
+* Recharts
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB (Mongoose)
+
+---
+
+## Project Structure
+
+```bash
+workout-app/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── features/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── pages/
+│   ├── services/
+│   ├── styles/
+│   └── utils/
+│
+└── workout-backend/
+    ├── models/
+    ├── routes/
+    └── server.js
+```
+
+---
+
+## Installation
+
+### Clone repository
+
+```bash
+git clone https://github.com/R-o-Ro/workout-app.git
+cd workout-app
+```
+
+### Install frontend dependencies
+
+```bash
+npm install
+```
+
+### Install backend dependencies
+
+```bash
+cd workout-backend
+npm install
+```
+
+---
+
+## Running the Application
+
+### Start backend
+
+```bash
+cd workout-backend
+npm run dev
+```
+
+### Start frontend
+
+```bash
+npm run dev
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file inside `workout-backend/`:
+
+```bash
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+
+---
+
+## Screenshots
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Workout Page
+![Workout](screenshots/workout.png)
+
+### Progress Charts
+![Exercise Charts](screenshots/exerciseprogression.png)
+
+### History
+![History](screenshots/history.png)
+
+### Measurements
+![Measurements](screenshots/measurements.png)
+
+---
+
+## Future Improvements
+
+* Authentication (JWT)
+* Deployment (Vercel / Render)
+* Improved mobile responsiveness
+* Advanced analytics and insights
+
+---
+
+## Author
+
+Rakshit Rathee
+
+---
+
+## Notes
+
+This project is built to demonstrate full-stack development skills including frontend architecture, backend API design, and state management.
